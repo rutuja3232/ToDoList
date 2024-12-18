@@ -1,0 +1,21 @@
+!<%-include('common/header');%>
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+  
+    <form action="/edit/<%= docs._id %>" method="post">
+        <h2> Task Edit Form</h2>
+        <input type="date" value="<%= docs.date %>" name="date" placeholder="date"><br><br>
+        <input type="text" value="<%= docs.task %>" name="task" placeholder="task"><br><br>
+        <input type="submit" value="Edit"><br><br>
+        <a href="/tasklist" >Show tasklist</a>
+    </form>
+   
+    
+  
+</body>
+</html>
